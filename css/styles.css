@@ -73,6 +73,8 @@ a {
 .link-arrow {
   color: var(--color-accent);
   text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .link-arrow::after {
@@ -760,7 +762,27 @@ a {
   margin: 0 auto;
 }
 
-/*@media screen and(min-width: 768px) {
-  .block-plans .card {
+/* Features */
+
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
   }
-}*/
+}
